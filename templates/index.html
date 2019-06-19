@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Data</title>
+</head>
+<body>
+<h1>Data</h1>
+<ul>
+    {{range . }}
+        <br>
+        <form method="POST">
+            <input type="hidden" name="id" value="{{ .Id }}" />
+            Delete<button formaction="/delete" name="Delete {{ .Id}}" value="{{ .Id}}"></button>
+            Edit<button formaction="/edit" name="Edit {{ .Id}}" value="{{ .Id}}"></button>
+        </form>
+        <li><b>Id:</b> {{ .Id }}</li>
+        <li><b>Title: </b>{{ .Title }}</li>
+        <li><b>Date: </b>{{ .Date }}</li>
+        <li><b>Author:</b> {{ .Author }}</li>
+        <li><b>Description </b>{{ .Description }}</li>
+        <li><b>Data </b>{{ .Data }}</li>
+
+    {{end}}
+</ul>
+</body>
+</html>

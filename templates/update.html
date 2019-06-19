@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit</title>
+</head>
+<body>
+<h3>Edit</h3>
+<form method="POST" action="/update">
+    <input type="hidden" name="id" value="{{ .Id}}"/>
+    <label>Title</label><br>
+    <input type="text" name="title" value="{{ .Title}}"/><br><br>
+    <label>Date</label><br>
+    <input type="text" name="date" value="{{ .Date}}"/><br><br>
+    <label>Author</label><br>
+    <input type="text" name="author" value="{{ .Author}}" /><br><br>
+    <label>Description</label><br>
+    <input type="text" name="description" value="{{ .Description}}"/><br><br>
+    <label>Data</label><br>
+    <input type="text" name="data" value=" {{ .Data}}"/><br><br>
+    <input type="submit" value="Send" />
+</form>
+</body>
+</html>
