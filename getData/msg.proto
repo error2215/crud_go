@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+service getData {
+    rpc getDataById(RequestId) returns (Data){}
+}
+
+message Data {
+    string title = 1;
+    string date = 2;
+    string data = 3;
+    string description = 4;
+    string author = 5;
+    int32 id = 6;
+}
+
+message RequestId {
+    int32 id = 1;
+}
