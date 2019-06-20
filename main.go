@@ -1,4 +1,4 @@
-package ESTest
+package main
 
 import (
 	"context"
