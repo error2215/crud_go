@@ -14,11 +14,11 @@ crud/getData - protobuf and gRPC files
 
 crud/serv - server side file, that has 3 fuctions:
 
-  main() - main function, that receives requests from client
+    main() - main function, that receives requests from client
   
-  GetDataById() - makes request to Elasticsearch client and returns item
+    GetDataById() - makes request to Elasticsearch client and returns item
   
-  searchDataInES() - function is doing search in ES by id
+    searchDataInES() - function is doing search in ES by id
   
 templates/ - templates for CRUD service
 
