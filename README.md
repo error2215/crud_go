@@ -1,5 +1,5 @@
 # crud_go
-Task description - create simple service for create/read/update/delete-ing items in Elasticsearch using REST API and create simple server-client service using gRPC and protobuf.
+Task description - create simple service for create/read/update/delete-ing items in Elasticsearch using REST API and create simple server-client service for searching items by id using gRPC and protobuf.
 Every item has such fields:
   1) Id
   2) Date
