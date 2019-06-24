@@ -13,8 +13,11 @@ crud_go/client/main.go - cliend side file, that makes request to server with id 
 crud/getData - protobuf and gRPC files
 
 crud/serv - server side file, that has 3 fuctions:
+
   main() - main function, that receives requests from client
+  
   GetDataById() - makes request to Elasticsearch client and returns item
+  
   searchDataInES() - function is doing search in ES by id
   
 templates/ - templates for CRUD service
